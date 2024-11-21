@@ -39,14 +39,14 @@ public class Section {
     public void printForGender() {
         System.out.println("Estudiantes hombres: ");
         for (int i = 0; i < arrayStu.size(); i++) {
-            if (arrayStu.get(i).getGender() == "male") {
+            if ("male".equals(arrayStu.get(i).getGender())) {
                 System.out.println(arrayStu.get(i).toString());
             }
         }
 
         System.out.println("Estudiantes mujeres: ");
         for (int i = 0; i < arrayStu.size(); i++) {
-            if (arrayStu.get(i).getGender() == "femele") {
+            if ("female".equals(arrayStu.get(i).getGender())) {
                 System.out.println(arrayStu.get(i).toString());
             }
         }
